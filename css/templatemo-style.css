@@ -370,16 +370,16 @@ h1,h2,h3,h4,h5
         border: 2px solid #ffffff;
         border-radius: 50%;
         color: #ffa500;
-        font-size: 24px;
+        font-size: 20px;
         margin-right: 24px;
-        width: 60px;
-        height: 60px;
-        line-height: 55px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
         text-align: center;
         vertical-align: middle;
         transition: all 0.4s ease-in;
     }
-#contact .fa :hover
+#contact .fa:hover
     {
         background: #ffffff;
         cursor: pointer;
