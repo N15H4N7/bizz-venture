@@ -347,6 +347,12 @@ h1,h2,h3,h4,h5
 
 /* start contact */
 
+.ges_card{
+  box-shadow: 0 4px 8px 0 rgba(255,255,255,0.5);
+  transition: 0.3s;
+  padding: 2%
+}
+
 #contact address
     {
       padding-bottom: 18px;
@@ -363,12 +369,20 @@ h1,h2,h3,h4,h5
     {
         border: 2px solid #ffffff;
         border-radius: 50%;
-        color: #D43F52;
-        width: 50px;
-        height: 50px;
-        line-height: 45px;
+        color: #ffa500;
+        font-size: 24px;
+        margin-right: 24px;
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
         text-align: center;
-        margin-right: 20px;
+        vertical-align: middle;
+        transition: all 0.4s ease-in;
+    }
+#contact .fa :hover
+    {
+        background: #ffffff;
+        cursor: pointer;
     }
 #contact .form-control
     {
