@@ -36,6 +36,12 @@ body
 #portfolio .fp-slide,
 #portfolio .fp-tableCell,
 
+#mentors,
+#mentors .fp-slide,
+#mentors .fp-tableCell,
+
+
+
 footer,
 footer .fp-slide,
 footer .fp-tableCell
@@ -54,7 +60,7 @@ h1,h2,h3,h4,h5
 /* end all heading */
 
 /* start all section */
-#work, #about, #portfolio, #contact
+#work, #about, #portfolio, #contact, #mentors
     {
         padding-top: 100px;
         padding-bottom: 120px;
@@ -277,7 +283,7 @@ h1,h2,h3,h4,h5
 #about h4
     {
         padding: 15px 0;
-		color: #D43F52;
+		    color: #D43F52;
     }
 #about .progress
     {
@@ -452,3 +458,41 @@ footer hr
         color: #D43F52;
     }
 /* end social icon */
+
+/* start mentor */
+#portfolio
+    {
+        background: #1a1a1a;
+        text-align: center;
+    }
+#portfolio h2
+    {
+        padding-bottom: 30px;
+    }
+#portfolio .portfolio-thumb
+    {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 30px;
+    }
+#portfolio .portfolio-thumb .portfolio-overlay
+    {
+        background: #D43F52;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding-top: 60px;
+        transition: all 0.4s ease-in-out;
+    }
+#portfolio .portfolio-thumb:hover .portfolio-overlay
+    {
+        cursor: pointer;
+        opacity: 0.8;
+        transform: scale(0.9);
+    }
+/* end mentors */
