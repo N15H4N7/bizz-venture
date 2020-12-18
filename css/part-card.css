@@ -1,0 +1,263 @@
+.container {
+  position: relative;
+}
+.container .page-title, .container .page-sub-title {
+  color: white;
+  text-align: center;
+}
+.container .page-title {
+  margin: 30px 0 5px;
+  font-size: 30px;
+}
+.container .page-sub-title {
+  font-weight: 100;
+  margin: 0 0 30px 0;
+  font-size: 23px;
+}
+
+html {
+  background: linear-gradient(45deg, #ffa500 10%, #FFB88C 90%);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100vh;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.part_card-container {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  margin: 50px;
+  width: 400px;
+  padding: 10px;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+  -webkit-transition: 0;
+  transition: 0;
+}
+
+.front {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  opacity: 0;
+  padding-top: 60px;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  background: #333741;
+  color: white;
+}
+
+.part_card {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 40px 110px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.part_card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.part_card:hover .front {
+  opacity: 0;
+}
+.part_card:hover .back {
+  opacity: 1;
+}
+
+.sub-title {
+  color: #ffa500;
+  -webkit-animation: slide-in 0.75s;
+          animation: slide-in 0.75s;
+  -webkit-animation: slide-in 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+          animation: slide-in 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+  -webkit-animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+          animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0 0 5px 0;
+}
+
+.title {
+  color: #333741;
+  -webkit-animation: slide-in-slow 0.75s;
+          animation: slide-in-slow 0.75s;
+  -webkit-animation: slide-in-slow 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+          animation: slide-in-slow 0.75s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+  -webkit-animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+          animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.synopsis {
+  color: #ffa500;
+  font-size: 27px;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 0 35px;
+}
+
+.btn {
+  border: 1px solid #ffa500;
+  border-radius: 5px;
+  background: transparent;
+  display: inline-block;
+  font-size: 17px;
+  padding: 8px 20px 9px 15px;
+  color: #ffa500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 0 2px 0;
+  font-weight: 100;
+}
+.btn.secondary {
+  border-color: #ffa500;
+  color: #ffa500;
+}
+.btn.secondary:hover {
+  background: #ffa500;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #ffa500;
+  color: white;
+}
+.btn i {
+  margin: 0 5px 0;
+}
+
+.image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: slide-in-right 1.25s;
+          animation: slide-in-right 1.25s;
+  -webkit-animation: slide-in-right 1.25s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+          animation: slide-in-right 1.25s cubic-bezier(0.625, 0.075, 0.11, 1.165);
+  -webkit-animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+          animation-timing-function: cubic-bezier(0.625, 0.075, 0.11, 1.165);
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slide-in-slow {
+  0% {
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-in-slow {
+  0% {
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+  20% {
+    -webkit-transform: translate3d(-300px, 0, 0);
+            transform: translate3d(-300px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+  }
+  30% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+  }
+  30% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
