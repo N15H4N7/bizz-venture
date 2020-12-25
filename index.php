@@ -219,6 +219,8 @@
 				<div class="col-md-12">
 					<h2 class="wow bounce">KEY NOTE SPEAKER</h2>
 				</div>
+			</div>
+			<div style="display: flex; justify-content: center;"> 
 				<div class="team_card">
 				  <img src="http://www.lift-financial.com/perch/resources/team/marktueart-1-w800.jpg" alt="" />
 				  <div class="data">
@@ -240,8 +242,7 @@
 				    <a href="#" class="fa fa-twitter"></a>
 				    <a href="#" class="fa fa-behance"></a>
 				  </div>
-				</div>
-				<div class="team_card">
+				</div><div class="team_card">
 				  <img src="http://www.lift-financial.com/perch/resources/team/marktueart-1-w800.jpg" alt="" />
 				  <div class="data">
 				    <h2>Richard Z. Kruspe</h2>
@@ -251,53 +252,10 @@
 				    <a href="#" class="fa fa-twitter"></a>
 				    <a href="#" class="fa fa-behance"></a>
 				  </div>
-				</div>
+				</div>				
+			</div>
 				
-				<!-- <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-								<h4>Name</h4>
-								<h5>About</h5>
-							</div>
-					</div>
-				</div> -->
-				<!-- <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-								<h4>Name</h4>
-								<h5>About</h5>
-							</div>
-					</div>
-				</div> -->
-				<!-- <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-								<h4>Name</h4>
-								<h5>About</h5>
-							</div>
-					</div>
-				</div> -->
-				<!-- <div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img4.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-								<h4>Name</h4>
-								<h5>About</h5>
-							</div>
-					</div>
-				</div> -->
-				<!-- <div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
-					<div class="portfolio-thumb">
-						<img src="images/portfolio-img5.jpg" class="img-responsive" alt="portfolio img">
-							<div class="portfolio-overlay">
-								<h4>Name</h4>
-								<h5>About</h5>
-							</div>
-					</div>
-				</div> -->
+
 			</div>
 		</div>
 	</div>
@@ -328,7 +286,22 @@
 						</div>
 
 					</div>
-					
+					<div class="events-wrapper">
+						<div class="event">
+							<div class="event-day">
+								<div>
+									<span class="day">7</span>
+									<span class="year">Nov, 2020</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">Pre Event Day</h3>
+								<p>It's time for the warm up round before the main battle. It's to make you aware about what you are up for.<br>
+									It's time for the pre- event</p>
+							</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
 

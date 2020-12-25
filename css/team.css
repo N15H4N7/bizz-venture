@@ -22,7 +22,8 @@ h1{
   overflow: hidden;
   position: relative;
   margin:0 0.5% 1% 0;
-  display:inline-block
+  display:inline-block;
+  margin: 50px;
 }
 .team_card:nth-of-type(3n){
   margin-right:0;
