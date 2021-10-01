@@ -440,8 +440,6 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- fullpage -->
 		<script src="js/jquery.fullPage.js"></script>
-		<!-- smoothScroll -->
-		<script src="js/smoothscroll.js"></script>
 		<!-- wow -->
 		<script src="js/wow.min.js"></script>
 		<!-- text rotater -->
