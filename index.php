@@ -441,6 +441,8 @@
 		<!-- fullpage -->
 		<script src="js/jquery.fullPage.js"></script>
 		<!-- wow -->
+		<!-- smoothScroll -->
+			<script src="js/smoothscroll.js"></script>
 		<script src="js/wow.min.js"></script>
 		<!-- text rotater -->
 		<script src="js/jquery.simple-text-rotator.js"></script>
